@@ -1,0 +1,76 @@
+.calendar
+  display: flex
+  flex-direction: column
+  &-row
+    display: flex
+    width: max-content
+  &-cel
+    border-top: #EEF4F8 solid 1px
+    border-right: #EEF4F8 solid 1px
+    border-left: #EEF4F8 solid 1px
+    position: relative
+    flex-basis: 29px
+    height: 55px
+    width: 30px
+
+    &_active
+      background: blueviolet
+  &-header
+    height: 87px
+
+  &-text
+    position: absolute
+    top: 22px
+    left: 50%
+    transform: translate(-50%,0)
+    +font(8px, 10px)
+    font-size: 8px
+    line-height: 10px
+    /* identical to box height */
+    
+    text-align: center
+    text-transform: uppercase
+    font-feature-settings: 'tnum' on, 'lnum' on
+
+  &-day
+    margin-bottom: 4px
+  &-wrapper
+    overflow-x: auto
+  &-weekend
+    color: #1E88E5
+  &-top
+    height: 66px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-button
+    font-family: $fontMon
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    width: 135px
+    height: 32px
+    color: #1E88E5
+    margin-left: 25px
+  &-select
+    font-family: $fontMon
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #455A64
+    margin-right: 25px
+  &-month
+    display: flex
+    justify-content: center
+    align-items: center
+    &__text
+      margin-left: 40.5px
+      margin-right: 40.5px
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 17px
+      text-align: center
+      color: #455A64
