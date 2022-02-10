@@ -26,7 +26,7 @@
     "moment": "^2.24.0",
     "mongoose": "^5.8.11",
     "next": "^9.2.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "null-loader": "^3.0.0",
     "react": "^16.12.0",
